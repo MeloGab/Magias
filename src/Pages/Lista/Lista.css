@@ -1,0 +1,114 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.cards .card h2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+
+main .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+main .cards .card {
+    margin: 0 auto;
+
+    background-color: #2F3644;
+
+    padding: 30px 40px;
+    width: 600px;
+
+    border-radius: 7px;
+    margin-top: 40px;
+
+}
+
+.cards .card header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card header h2 {
+    font-family: Noto Sans;
+    font-weight: 700;
+
+    color: #D2DAF5;
+
+    font-size: 1.7rem;
+}
+
+.botões {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.botões button {
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 1.3rem;
+    border: 0;
+
+    border-radius: 10px;
+
+    font-family: Heebo;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    padding: 5px 40px;
+}
+
+.btn-editar button {
+    background-color: #80D8FF;
+}
+
+.btn-deletar button {
+    background-color: rgb(241, 45, 45);
+
+}
+
+.btn-detalhes button {
+    background-color: #3DECB1;
+}
+
+.loading {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-device-width: 950px) {
+    .card {
+        width: 70px;
+    }
+
+    .botões {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 70px;
+        padding: 0;
+    }
+
+    .botões {
+        flex-direction: column;
+    }
+
+}
